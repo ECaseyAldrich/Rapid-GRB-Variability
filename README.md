@@ -1,0 +1,4 @@
+Run the codes in the following order:
+    1. mult_norm_kdefunc_gen.py - This code takes a photon list as an input and generates all of the kernel density estimations needed. (photon lists used in paper are provided)
+    2. norm_random_number_gen.py - This code takes the kernel density estimations and the photon lists and generates an array of arrays containing the Monte Carlo bursts needed for the timescale tests.
+    3. TS_normkde_readinMCbursts.py & TS_normkde_readinMCbursts_multdts.py - This code takes the photon lists and generated Monte Carlo bursts and compares them in both the Cumulative Pair Analysis test and Multiplication Gap test respectively. Note: The results generated will have normalized time values that need to be unnormalized by multiplying by the total time range analyzed (in the case of our paper, 1000 seconds).
